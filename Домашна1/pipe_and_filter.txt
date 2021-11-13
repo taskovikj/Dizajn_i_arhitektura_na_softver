@@ -1,0 +1,17 @@
+grocery-shops
+osmfilter ohridmap.osm --keep="shop=supermarket" | osmconvert - --all-to-nodes --csv="title address:located_in geo_location phone " --csv-headline --csv-separator="," -o="groceries.csv"
+
+beaches
+osmfilter ohridmap.osm --keep="natural=beach" | osmconvert - --all-to-nodes --csv="title address:located_in geo_location phone" --csv-headline --csv-separator="," -o="beaches.csv" 
+
+banks
+osmfilter ohridmap.osm --keep="amenity=bank" | osmconvert - --all-to--nodes --csv="title address:located_in geo_location phone" --csv-headline --csv-separator="," -o="banks.csv"
+
+gastStations
+osmfilter ohridmap.osm --keep="amenity=fuel" | osmconvert - --all-to-nodes --csv="title address:located_in geo_location phone" --csv-headline --csv-separator="," -o="gasStations.csv"
+
+hotels
+osmfilter ohridmap.osm --keep="amenity=hotel" | osmconvert - --all-to-nodes --csv="title address:located_in geo_location phone" --csv-headline --csv-separator="," -o="hotels.csv"
+
+restaurants
+osmfilter ohridmap.osm --keep="amenity=restaurant" | osmconvert - --all-to-nodes --csv="title address:located_in geo_location phone" --csv-headline --csv-separator="," -o="restaurants.csv"
